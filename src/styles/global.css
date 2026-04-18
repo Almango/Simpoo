@@ -1,0 +1,19 @@
+:root {
+  --text-logo-fontsize: 2rem;
+  --text-title-fontsize: 1.25rem;
+  --text-content-fontsize: 1.15rem;
+  --text-description-fontsize: 0.85rem;
+
+  --text-logo-color: #333333;
+  --text-title-color: #111111;
+  --text-content-color: #222222;
+  --text-description-color: #444444;
+
+}
+
+body {
+  font-family: "Noto Serif SC";
+  /* background-image: radial-gradient(circle, rgb(207, 231, 231) 2px, #fff 2px);
+  background-size: 20px 20px;
+  background-attachment: fixed; */
+}

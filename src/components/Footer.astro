@@ -1,0 +1,42 @@
+---
+import { BASE_CONFIG, DEVELOPMENT } from '../config'
+---
+
+<footer>
+  <span class="footer-copyright">© 2026 Built with by {BASE_CONFIG.author}.</span>
+  <nav class="footer-nav">
+    <a href="https://icp.gov.moe/?keyword=20240146" target="_blank">萌ICP备20240146号</a>
+    <a href="/rss.xml">RSS</a>
+    <a href="/rss.xml">{DEVELOPMENT.VERSION}</a>
+  </nav>
+</footer>
+
+<style>
+  footer {
+    margin: 0;
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .footer-copyright {
+    font-size: var(--text-description-fontsize);
+    color: var(--text-description-color);
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-nav a {
+    font-size: var(--text-description-fontsize);
+    color: var(--text-description-color);
+    text-decoration: none;
+  }
+</style>

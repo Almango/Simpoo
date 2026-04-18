@@ -1,0 +1,50 @@
+---
+import { BASE_CONFIG } from '../config'
+const navItems = [
+  { label: 'Archive', href: '/archive' },
+  { label: 'Diary', href: '/diary' },
+  { label: 'Links', href: '/link' },
+  { label: 'About', href: '/about' },
+]
+---
+
+<header>
+  <a href="/" class="header-logo">{BASE_CONFIG.title}</a>
+  <nav class="header-nav">
+    {navItems.map(item => (
+      <a href={item.href}>{item.label}</a>
+    ))}
+  </nav>
+</header>
+
+<style>
+  header {
+    margin: 0;
+    padding: 1.5rem 0rem 1rem 0rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .header-logo {
+    font-size: var(--text-logo-fontsize);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    font-family: 'Bungee Shade', cursive;
+    color: var(--text-logo-color);
+  }
+  .header-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .header-nav a {
+    font-size: calc(var(--text-content-fontsize) - 2px);
+    color: var(--text-content-color);
+    text-decoration: none;
+  }
+</style>

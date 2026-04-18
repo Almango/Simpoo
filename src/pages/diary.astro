@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+interface Diary {
+  author: string
+  date: string
+  content: string
+}
+
+const diaries: Diary[] = [
+  {
+    author: 'Almango',
+    date: '2026-04-18 14:32:08',
+    content: '考虑了很久，最终还是打算另起炉灶，重新设计一个更简洁的博客主题，我将它命名为Simpoo，我希望它能如Simple的含义那样：简单、直接、高效。'
+  }
+]
+
+const title = '日记'
+---
+
+<Layout title={title}>
+  <div class="diary">
+    {diaries.map(diary => (
+      <article class="diary-item">
+        <div class="diary-meta">
+          <span class="diary-author">{diary.author}</span>
+          <span class="diary-published">{diary.date}</span>
+        </div>
+        <p class="diary-content">{diary.content}</p>
+      </article>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .diary {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .diary-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .diary-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .diary-author {
+    font-weight: 500;
+    color: var(--text-title-color);
+  }
+
+  .diary-published {
+    font-size: var(--text-description-fontsize);
+    color: var(--text-description-color);
+  }
+
+  .diary-content {
+    font-size: var(--text-content-fontsize);
+    color: var(--text-content-color);
+    line-height: 1.8;
+    margin: 0;
+  }
+</style>

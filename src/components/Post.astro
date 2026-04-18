@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content'
+
+const allPosts = await getCollection('posts')
+const posts = allPosts.sort((a, b) => {
+  return new Date(b.data.published).getTime() - new Date(a.data.published).getTime()
+})
+---
+
+<ul class="post">
+  {posts.map(post => (
+    <li class="post-item">
+      <a href={`/post/${post.id}`} class="post-link">
+        <h2 class="post-title">{post.data.title}</h2>
+        {post.data.description && <p class="post-description">{post.data.description}</p>}
+        <span class="post-published">{post.data.published.toISOString().split('T')[0]}</span>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .post {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .post-item {
+    padding: 1rem 0;
+  }
+
+  .post-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .post-title {
+    font-size: var(--text-title-fontsize);
+    font-weight: 500;
+    color: var(--text-title-color);
+    margin: 0;
+  }
+
+  .post-description {
+    font-size: calc(var(--text-description-fontsize) + 2.5px);
+    color: var(--text-description-color);
+    margin: 0;
+  }
+
+  .post-published {
+    font-size: var(--text-description-fontsize);
+    color: var(--text-description-color);
+  }
+</style>
