@@ -8,6 +8,10 @@
   --text-title-color: #111111;
   --text-content-color: #222222;
   --text-description-color: #444444;
+
+
+
+  --font-family: "Noto Serif SC", serif, Sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -20,8 +24,10 @@
 }
 
 body {
-  font-family: "Noto Serif SC";
-  /* background-image: radial-gradient(circle, rgb(207, 231, 231) 2px, #fff 2px);
-  background-size: 20px 20px;
-  background-attachment: fixed; */
+  font-family: var(--font-family);
+}
+
+@font-face {
+  font-family: "Bungee Shade";
+  src: url("/fonts/df5ffbcecbcd3501db3619de3f43e3ba.ttf") format("truetype");
 }
