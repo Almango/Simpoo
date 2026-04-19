@@ -3,15 +3,29 @@
   --text-title-fontsize: 1.25rem;
   --text-content-fontsize: 1.15rem;
   --text-description-fontsize: 0.85rem;
+  --font-family: "Noto Serif SC", serif, Sans-serif;
+}
 
+/* 亮色主题（默认） */
+:root {
   --text-logo-color: #333333;
   --text-title-color: #111111;
-  --text-content-color: #222222;
+  --text-content-color: #181818;
   --text-description-color: #444444;
+  --bg-color: #ffffff;
+  --border-color: #e1e4e8;
+}
 
-
-
-  --font-family: "Noto Serif SC", serif, Sans-serif;
+/* 暗色主题 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-logo-color: #c9d1d9;
+    --text-title-color: #f0f6fc;
+    --text-content-color: #c9d1d9;
+    --text-description-color: #8b949e;
+    --bg-color: #0d1117;
+    --border-color: #30363d;
+  }
 }
 
 @media (max-width: 768px) {
@@ -25,10 +39,14 @@
 
 body {
   font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-content-color);
 }
 
 @font-face {
-  font-family: "Bungee Shade";
-  src: url("/fonts/df5ffbcecbcd3501db3619de3f43e3ba.ttf") format("truetype");
+  font-family: "Meie Script";
+  src: url("/fonts/250275aa6328605850cbab4f4b6b6f0b.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-

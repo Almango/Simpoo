@@ -7,7 +7,10 @@ export const BASE_CONFIG = {
   site_url: 'https://blog.almango.cn',
   create_time: '2024-01-23',
 }
+export const POST_CONFIG = {
+  page_size: 8,     // 每页显示数量
+}
 
 export const DEVELOPMENT = {
-  VERSION: '1.0.0',
+  VERSION: '1.1.0',
 }

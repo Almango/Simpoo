@@ -7,6 +7,7 @@ import { BASE_CONFIG, DEVELOPMENT } from '../config'
   <nav class="footer-nav">
     <a href="https://icp.gov.moe/?keyword=20240146" target="_blank">萌ICP备20240146号</a>
     <a href="/rss.xml">RSS</a>
+    <a href="/atom.xml">Dark / Light</a>
     <a href="/rss.xml">{DEVELOPMENT.VERSION}</a>
   </nav>
 </footer>
@@ -15,7 +16,7 @@ import { BASE_CONFIG, DEVELOPMENT } from '../config'
   footer {
     margin: 0;
     padding: 1rem 0 1.5rem 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
     align-items: center;

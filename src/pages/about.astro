@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Content } from '../content/about.md'
+import '../styles/markdown.css'
+import 'github-markdown-css/github-markdown.css'
+const page = "关于"
+---
+
+<Layout title={page}>
+  <article class="post">
+    <div class="post-content markdown-body">
+      <Content />
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  .post-content {
+    font-size: var(--text-content-fontsize);
+    line-height: 1.8;
+  }
+</style>
