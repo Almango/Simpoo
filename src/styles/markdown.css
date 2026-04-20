@@ -1,3 +1,11 @@
 .markdown-body * {
   font-family: var(--font-family) !important;
 }
+
+
+.markdown-body a {
+  font-weight: bold;
+  color: var(--text-text-color);
+  text-decoration: underline;
+   text-underline-offset: 6px;
+}

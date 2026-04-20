@@ -1,6 +1,6 @@
 
 export const BASE_CONFIG = {
-  title: 'Almango',
+  title: '啊芒果',
   subtitle: '天真永不消逝，浪漫至死不渝',
   author: 'Almango',
   favicon: '/favicon.png',

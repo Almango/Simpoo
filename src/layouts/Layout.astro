@@ -14,11 +14,9 @@ const { title = BASE_CONFIG.title } = Astro.props
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href={BASE_CONFIG.favicon} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="preload" href="/fonts/RWmMoKWR9v4ksMfaWd_JN9XFiaQ.woff2" as="font" type="font/woff2" crossorigin>
-
     <title>{title}</title>
     <!-- 防止暗色主题闪烁的内联样式 -->
     <style is:inline>

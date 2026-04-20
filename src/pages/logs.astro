@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro'
 
-interface Diary {
+interface Logs {
   author: string
   date: string
   content: string
 }
 
-const diaries: Diary[] = [
+const logs: Logs[] = [
   // 新文章写在最上方 //
   {
     author: 'Almango',
@@ -30,49 +30,49 @@ const title = '日记'
 ---
 
 <Layout title={title}>
-  <div class="diary">
-    {diaries.map(diary => (
-      <article class="diary-item">
-        <div class="diary-meta">
-          <span class="diary-author">{diary.author}</span>
-          <span class="diary-published">{diary.date}</span>
+  <div class="logs">
+    {logs.map(log => (
+      <article class="logs-item">
+        <div class="logs-meta">
+          <span class="logs-author">{log.author}</span>
+          <span class="logs-published">{log.date}</span>
         </div>
-        <p class="diary-content">{diary.content}</p>
+        <p class="logs-content">{log.content}</p>
       </article>
     ))}
   </div>
 </Layout>
 
 <style>
-  .diary {
+  .logs {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 1rem 0;
   }
 
-  .diary-item {
+  .logs-item {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
 
-  .diary-meta {
+  .logs-meta {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
   }
-  .diary-author {
+  .logs-author {
     font-weight: var(--text-weight);
     color: var(--text-title-color);
   }
 
-  .diary-published {
+  .logs-published {      
     font-size: var(--text-description-fontsize);
     color: var(--text-description-color);
   }
 
-  .diary-content {
+  .logs-content {
     font-size: var(--text-content-fontsize);
     color: var(--text-content-color);
     line-height: 1.8;
