@@ -9,9 +9,9 @@
 
 /* 亮色主题（默认） */
 :root {
-  --text-logo-color: #333333;
-  --text-title-color: #111111;
-  --text-content-color: #181818;
+  --text-logo-color: #222222;
+  --text-title-color: #000000;
+  --text-content-color: #111111;
   --text-description-color: #444444;
   --bg-color: #ffffff;
   --border-color: #e1e4e8;
@@ -45,8 +45,8 @@ body {
 }
 
 @font-face {
-  font-family: "Meie Script";
-  src: url("/fonts/250275aa6328605850cbab4f4b6b6f0b.ttf") format("truetype");
+  font-family: "Great Vibes";
+  src: url("/fonts/RWmMoKWR9v4ksMfaWd_JN9XFiaQ.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;

@@ -57,11 +57,18 @@ export const links: Link[] = [
     rss: "https://blog.sakura.ink/rss.xml"
   },
   {
-    name: "卿以君歌",
-    description: "幻术的世界有什么不好？",
-    url: "https://www.mekimto.cn/",
-    avatar: "https://q1.qlogo.cn/g?b=qq&nk=2882740&s=100",
+    name: "宇阳",
+    description: "记录所学知识，缩短和大神的差距！",
+    url: "https://liuyuyang.net",
+    avatar: "https://q1.qlogo.cn/g?b=qq&nk=3311118881&s=640",
+    rss: "https://liuyuyang.net/api/rss"
   },
+  // {
+  //   name: "卿以君歌",
+  //   description: "幻术的世界有什么不好？",
+  //   url: "https://www.mekimto.cn/",
+  //   avatar: "https://q1.qlogo.cn/g?b=qq&nk=2882740&s=100",
+  // },
   {
     name: "Revincx",
     description: "可爱就是正义~",
