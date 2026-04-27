@@ -9,9 +9,9 @@
 
 /* 亮色主题（默认） */
 :root {
-  --text-logo-color: #222222;
-  --text-title-color: #000000;
-  --text-content-color: #111111;
+  --text-logo-color: #000000;
+  --text-title-color: #111111;
+  --text-content-color: #222222;
   --text-description-color: #444444;
   --bg-color: #ffffff;
   --border-color: #e1e4e8;

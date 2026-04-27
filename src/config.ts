@@ -2,8 +2,9 @@
 export const BASE_CONFIG = {
   title: '啊芒果',
   subtitle: '天真永不消逝，浪漫至死不渝',
-  author: 'Almango',
+  author: '啊芒果',
   favicon: '/favicon.png',
+  avatar: '/avatar.webp',
   site_url: 'https://blog.almango.cn',
   create_time: '2024-01-23',
 }
