@@ -9,7 +9,7 @@ export const BASE_CONFIG = {
   create_time: '2024-01-23',
 }
 export const POST_CONFIG = {
-  page_size: 8,     // 每页显示数量
+  page_size: 12,     // 每页显示数量
 }
 export const CommentConfig = {
   enable: true, 
@@ -20,5 +20,5 @@ export const CommentConfig = {
   }
 }
 export const DEVELOPMENT = {
-  VERSION: '1.2.6',
+  VERSION: '1.3.0',
 }
