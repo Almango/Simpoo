@@ -10,7 +10,7 @@
 /* 亮色主题（默认） */
 :root {
   --text-logo-color: #000000;
-  --text-title-color: #111111;
+  --text-title-color: #000000;
   --text-content-color: #222222;
   --text-description-color: #444444;
   --bg-color: #ffffff;
@@ -21,11 +21,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text-logo-color: #ffffff;
-    --text-title-color: #eeeeee;
-    --text-content-color: #ffffff;
+    --text-title-color: #ffffff;
+    --text-content-color: #eeeeee;
     --text-description-color: #bbbbbb;
     --bg-color: #11151a;
-    --border-color: #636c77;
+    --border-color: #94989c;
   }
 }
 
